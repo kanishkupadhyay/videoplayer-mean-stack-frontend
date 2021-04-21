@@ -1,0 +1,16 @@
+/* You can add global styles to this file, and also import other style files */
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+ .footer{
+      position: absolute;
+        left: 0;
+      right: 0;
+      height:50px;
+      background:#000000e3;
+  }
+.active{
+  color: rgb(233 87 111) !important;
+}
+
+

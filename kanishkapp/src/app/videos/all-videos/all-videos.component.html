@@ -1,0 +1,20 @@
+<div class="spinner" *ngIf="spinner">
+  <mat-spinner color="warn"></mat-spinner>
+</div>
+<div class="main">
+    <div class="col-lg-9 ">
+        <div class="row">
+
+            <div class="col-lg-6 col-md-6 mb-4 " *ngFor="let k of movies">
+                <div class="card" style="width: 20rem;" >
+                    <img class="card-img-top" src="{{k.imgsrc}}" alt="Card image cap">
+                    <div class="card-body">
+                      <h2 class="card-title">{{k.name}}</h2>
+                      <p class="card-text">Actors:{{k.actor}}</p>
+                      <a routerLink="watch/{{k.name}}/{{k._id}}" class="btn btn-primary">Watch</a>
+                    </div>
+                  </div>
+                </div>
+            </div>
+</div>
+        </div>
